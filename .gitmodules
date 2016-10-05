@@ -1,0 +1,3 @@
+[submodule "chimas"]
+	path = chimas
+	url = https://github.com/TryChimas/chimas.git
