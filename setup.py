@@ -7,7 +7,7 @@ with open('chimas/requirements.txt') as f:
 
 setup(
     name='chimas',
-    version='0.0.6dev14',
+    version='0.0.6dev15',
     description='This is Chimas BBS server',
     url='https://github.com/TryChimas/chimas',
     author='Iacchus Mercurius',
