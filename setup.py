@@ -8,7 +8,7 @@ version_counter = time.strftime("%Y%m%d%H%M%S")
 
 setup(
     name='chimas',
-    version='0.0.6dev{}'.format(version_counter),
+    version='0.0.6.dev{}'.format(version_counter),
     description='This is Chimas BBS server',
     url='https://github.com/TryChimas/chimas',
     author='Iacchus Mercurius',
