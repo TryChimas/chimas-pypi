@@ -22,7 +22,7 @@ setup(
     #packages=['chimas',''],
     #package_dir={
     #    '' :'chimas'},
-    #py_modules=['chimas/chimasapp'],
+    py_modules=['chimas/chimasapp'],
     packages=['chimas', 'chimas.core'],
     #scripts=['chimas/chimasapp.py'],
     install_requires=[
