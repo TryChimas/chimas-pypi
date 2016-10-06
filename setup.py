@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open('version-counter') as vcounter:
+    version_counter = vcounter.read().strip()
+
 # https://packaging.python.org/distributing/#setup-args
 
 setup(
