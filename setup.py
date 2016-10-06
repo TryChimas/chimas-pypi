@@ -22,6 +22,7 @@ setup(
     ],
     keywords='chimas bbs forum server',
     #packages=['chimas',''],
+    package_dir={'':'chimas'},
     packages=['.', 'chimas', 'chimas.core'],
     install_requires=required,
     #include_package_data = True,
@@ -37,7 +38,7 @@ setup(
     #],
     entry_points='''
         [console_scripts]
-        chimas=chimas.chimas:run_chimas
-        chimas-server=chimas.chimas:chimascli
+        chimas=chimas:run_chimas
+        chimas-server=chimas:chimascli
     ''',
 )
