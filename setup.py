@@ -1,12 +1,12 @@
 from setuptools import setup
 
-#from os import path
-#if path.exists('requirements.txt'):
-#    reqs_file = 'requirements.txt'
-#else:
-#    reqs_file = 'chimas/requirements.txt'
+from os import path
+if path.exists('requirements.txt'):
+    reqs_file = 'requirements.txt'
+else:
+    reqs_file = 'chimas/requirements.txt'
 
-with open('requirements.txt') as f:
+with open(reqs_file) as f:
     required = f.read().splitlines()
 
 with open('version-counter') as vcounter:
@@ -35,7 +35,7 @@ setup(
     #include_package_data = True,
     package_data={
         '.' : ['version-counter'],
-        '' : ['requirements.txt','etc/*'],
+        'chimas' : ['requirements.txt','etc/*'],
     },
     #package_dir={'' : '.', 'chimas.core' : 'core/'},
     #package_dir={'' : '.'},
