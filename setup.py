@@ -21,8 +21,8 @@ setup(
     #packages=['chimas',''],
     #package_dir={
     #    '' :'chimas'},
-    py_modules=['chimas/chimas'],
-    packages=['.', 'chimas.core'],
+    #py_modules=['chimas/chimas'],
+    packages=['chimas', 'chimas.core'],
     scripts=['chimas.py'],
     install_requires=[
         'configobj==5.0.6',
