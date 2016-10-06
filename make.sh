@@ -4,11 +4,6 @@
 
 source venv/bin/activate
 
-# increment version-counter, so that it don't conflict when publishing to pypi
-
-read version < ./version-counter
-echo -n "$(($version+1))" > ./version-counter
-
 # update github
 
 git submodule foreach git pull

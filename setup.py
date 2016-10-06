@@ -1,8 +1,9 @@
 from setuptools import setup
 
-with open('version-counter') as vcounter:
-    version_counter = vcounter.read().strip()
+import time
 
+
+version_counter = time.strftime("%Y%m%d%H%M%S")
 # https://packaging.python.org/distributing/#setup-args
 
 setup(
@@ -34,7 +35,6 @@ setup(
 
     #include_package_data = True,
     package_data={
-        '.' : ['version-counter'],
         'chimas' : ['requirements.txt','etc/*'],
     },
     #package_dir={'' : '.', 'chimas.core' : 'core/'},
