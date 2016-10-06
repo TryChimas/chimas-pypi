@@ -12,6 +12,7 @@ git push
 
 # remove old builds
 
+rm -rf build/
 rm -rf chimas.egg-info/
 rm -rf dist/
 
