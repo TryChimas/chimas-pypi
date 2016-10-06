@@ -22,7 +22,7 @@ setup(
     #package_dir={
     #    '' :'chimas'},
     py_modules=['chimas'],
-    packages=['chimas.core'],
+    packages=['.', 'chimas.core'],
     install_requires=[
         'configobj==5.0.6',
         'Flask==0.11.1',
