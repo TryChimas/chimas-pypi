@@ -6,7 +6,7 @@ from setuptools import setup
 #else:
 #    reqs_file = 'chimas/requirements.txt'
 
-with open('requirements.txt') as f:
+with open('chimas/requirements.txt') as f:
     required = f.read().splitlines()
 
 with open('version-counter') as vcounter:
