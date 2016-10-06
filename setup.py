@@ -23,7 +23,7 @@ setup(
     keywords='chimas bbs forum server',
     #packages=['chimas',''],
     package_dir={'':'chimas'},
-    packages=['.', 'chimas', 'chimas.core'],
+    packages=['.', 'chimas.core'],
     install_requires=required,
     #include_package_data = True,
     package_data={
