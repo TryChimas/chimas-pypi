@@ -23,7 +23,7 @@ setup(
     install_requires=required,
     #include_package_data = True,
     package_data={
-        '.' : ['requirements.txt','etc/*'],
+        'chimas' : ['requirements.txt','etc/*'],
     },
     #package_dir={'' : '.', 'chimas.core' : 'core/'},
     #package_dir={'' : '.'},
