@@ -4,7 +4,7 @@ from os import path
 if path.exists('requirements.txt'):
     reqs_file = 'requirements.txt'
 else:
-    reqs_file = 'chimas/requirements.txt'
+    reqs_file = 'chimas/chimas/requirements.txt'
 
 with open(reqs_file) as f:
     required = f.read().splitlines()
