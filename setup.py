@@ -45,7 +45,7 @@ setup(
     #],
     entry_points='''
         [console_scripts]
-        chimas=chimasapp:run_chimas
+        chimascli=chimasapp:run_chimas
         chimas-server=chimasapp:chimascli
     ''',
 )
