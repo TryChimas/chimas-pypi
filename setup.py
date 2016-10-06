@@ -1,6 +1,12 @@
 from setuptools import setup
 
-with open('requirements.txt') as f:
+from os import path
+if path.exists('requirements.txt'):
+    reqs_file = 'requirements.txt'
+else:
+    reqs_file = 'chimas/requirements.txt'
+
+with open(reqs_file) as f:
     required = f.read().splitlines()
 
 with open('version-counter') as vcounter:
