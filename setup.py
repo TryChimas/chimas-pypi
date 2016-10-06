@@ -1,12 +1,12 @@
 from setuptools import setup
 
-from os import path
-if path.exists('requirements.txt'):
-    reqs_file = 'requirements.txt'
-else:
-    reqs_file = 'chimas/chimas/requirements.txt'
+#from os import path
+#if path.exists('requirements.txt'):
+#    reqs_file = 'requirements.txt'
+#else:
+#    reqs_file = 'chimas/requirements.txt'
 
-with open(reqs_file) as f:
+with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 with open('version-counter') as vcounter:
@@ -28,10 +28,10 @@ setup(
     ],
     keywords='chimas bbs forum server',
     #packages=['chimas',''],
-    package_dir={
-        '' :'chimas'},
+    #package_dir={
+    #    '' :'chimas'},
     py_modules=['chimas'],
-    packages=['core'],
+    packages=['chimas.core'],
     install_requires=required,
     #include_package_data = True,
     package_data={
