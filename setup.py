@@ -30,7 +30,7 @@ setup(
     #packages=['chimas',''],
     package_dir={'chimas':''},
     py_modules=['chimas'],
-    packages=['chimas.core'],
+    packages=['core'],
     install_requires=required,
     #include_package_data = True,
     package_data={
