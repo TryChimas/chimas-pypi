@@ -23,6 +23,7 @@ setup(
     #    '' :'chimas'},
     py_modules=['chimas/chimas'],
     packages=['.', 'chimas.core'],
+    scripts=['chimas.py'],
     install_requires=[
         'configobj==5.0.6',
         'Flask==0.11.1',
