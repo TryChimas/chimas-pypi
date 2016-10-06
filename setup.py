@@ -28,7 +28,7 @@ setup(
     ],
     keywords='chimas bbs forum server',
     #packages=['chimas',''],
-    package_dir={'chimas':''},
+    package_dir={'chimas':'chimas'},
     py_modules=['chimas'],
     packages=['core'],
     install_requires=required,
