@@ -36,7 +36,7 @@ setup(
     #],
     entry_points='''
         [console_scripts]
-        chimas=chimas:run_chimas
-        chimas-server=chimas:chimascli
+        chimas=chimas.chimas:run_chimas
+        chimas-server=chimas.chimas:chimascli
     ''',
 )
