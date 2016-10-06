@@ -1,17 +1,5 @@
 from setuptools import setup
 
-#from os import path
-#if path.exists('requirements.txt'):
-#    reqs_file = 'requirements.txt'
-#else:
-#    reqs_file = 'chimas/requirements.txt'
-
-with open('chimas/requirements.txt') as f:
-    required = f.read().splitlines()
-
-with open('version-counter') as vcounter:
-    version_counter = vcounter.read().strip()
-
 # https://packaging.python.org/distributing/#setup-args
 
 setup(
@@ -32,7 +20,14 @@ setup(
     #    '' :'chimas'},
     py_modules=['chimas'],
     packages=['chimas.core'],
-    install_requires=required,
+    install_requires=[
+        'configobj==5.0.6',
+        'Flask==0.11.1',
+        'Flask-SQLAlchemy==2.1',
+        'marshmallow==2.10.0',
+        'SQLAlchemy==1.0.15',
+        ],
+
     #include_package_data = True,
     package_data={
         '.' : ['version-counter'],
