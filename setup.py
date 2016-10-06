@@ -3,11 +3,14 @@ from setuptools import setup
 with open('chimas/requirements.txt') as f:
     required = f.read().splitlines()
 
+with open('version-counter') as vcounter:
+    version_counter = vcounter.read().strip()
+
 # https://packaging.python.org/distributing/#setup-args
 
 setup(
     name='chimas',
-    version='0.0.6dev15',
+    version='0.0.6dev{}'.format(version_counter),
     description='This is Chimas BBS server',
     url='https://github.com/TryChimas/chimas',
     author='Iacchus Mercurius',
