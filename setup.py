@@ -1,6 +1,6 @@
 from setuptools import setup
 
-with open('requirements.txt') as f:
+with open('chimas/requirements.txt') as f:
     required = f.read().splitlines()
 
 # https://packaging.python.org/distributing/#setup-args
