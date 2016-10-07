@@ -20,8 +20,7 @@ setup(
     ],
     keywords='chimas bbs forum server',
     #packages=['chimas',''],
-    package_dir={
-        '.' :'chimas'},
+     #   '.' :'chimas'},
     #py_modules=['chimas/chimasapp'],
     #packages=['chimas', 'chimas.core'],
     packages=['chimas', 'chimas.core'],
@@ -36,6 +35,7 @@ setup(
 
     #include_package_data = True,
     package_data={
+        '' :  ['*'],
         'chimas' : ['requirements.txt','etc/*'],
     },
     #package_dir={'' : '.', 'chimas.core' : 'core/'},
