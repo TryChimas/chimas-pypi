@@ -35,7 +35,6 @@ setup(
 
     #include_package_data = True,
     package_data={
-        '.' :  ['*'],
         'chimas' : ['requirements.txt','etc/*'],
     },
     #package_dir={'' : '.', 'chimas.core' : 'core/'},
